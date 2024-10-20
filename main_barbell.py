@@ -29,10 +29,10 @@ def draw_barbell(weight, weights_list):
     turtle.pendown()
     turtle.goto(260, 0)
     turtle.penup()
-    # weight - вес штанги, который надо набрать
-    # total_weight - набранный на штангу вес
-    # weight_value - текущий вес блина из списка
-    # value - текущее значение списка
+    # weight - the weight of the barbell to be gained
+    # total_weight - weight on the barbell
+    # weight_value - current weight of barbell plate from the list
+    # value - current value of the list
     total_weight = 0
     offset = 0
     counter = 0
@@ -63,10 +63,10 @@ def draw_barbell(weight, weights_list):
 
 
 def main():
-    weight = turtle.numinput('', "Введите вес штанги: ")
+    weight = turtle.numinput('', "Enter the weight of the barbell: ")
     if weight > 545 or weight < 20:
         pen = turtle.getpen()
-        pen.write("Невозможно собрать такую штангу")
+        pen.write("It's impossible to assemble a barbell like that")
         time.sleep(2)
         pen.clear()
         main()
